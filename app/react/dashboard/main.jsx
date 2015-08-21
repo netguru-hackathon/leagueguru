@@ -4,7 +4,7 @@ import LeaguePanel from './league-panel.jsx';
 export default class DashboardMain extends React.Component {
   render() {
     const leagues = this.props.leagues.map(league => {
-      return <LeaguePanel name={league.name}></LeaguePanel>
+      return <LeaguePanel name={league.name} openLeague={this.props.openLeague}></LeaguePanel>
     });
 
     return <div className="row">

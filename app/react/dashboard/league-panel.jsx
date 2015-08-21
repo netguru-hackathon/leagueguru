@@ -9,7 +9,7 @@ export default class LeaguePanel extends React.Component {
             <h5>{this.props.name}</h5>
           </div>
           <div className="col-md-4">
-            <button className="btn btn-default pull-right">Open</button>
+            <button className="btn btn-default pull-right" onClick={this.props.openLeague}>Open</button>
           </div>
         </div>
       </div>
