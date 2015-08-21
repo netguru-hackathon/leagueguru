@@ -15,6 +15,7 @@ gem 'haml-rails'
 gem 'pg'
 gem 'simple_form'
 gem 'active_model_serializers', '0.8'
+gem 'omniauth-google-oauth2'
 
 group :development do
   gem 'better_errors'
