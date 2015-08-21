@@ -14,7 +14,7 @@ gem 'figaro', '>= 1.0.0.rc1'
 gem 'haml-rails'
 gem 'pg'
 gem 'simple_form'
-gem 'active_model_serializers', '0.10.0.rc2'
+gem 'active_model_serializers', '0.8'
 
 group :development do
   gem 'better_errors'

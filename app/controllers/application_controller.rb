@@ -8,6 +8,6 @@ class ApplicationController < ActionController::Base
   end
 
   def serialize_all(collection, serializer)
-    ActiveModel::Serializer::ArraySerializer.new(collection, each_serializer: serializer).to_json
+    ActiveModel::ArraySerializer.new(collection, each_serializer: serializer).to_json
   end
 end
