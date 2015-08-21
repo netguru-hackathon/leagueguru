@@ -80,3 +80,7 @@ pickle-email-*.html
 
 # Ignore application configuration
 /config/application.yml
+
+node_modules
+/app/assets/javascripts/bundle.js
+/app/assets/stylesheets/bundle.css
