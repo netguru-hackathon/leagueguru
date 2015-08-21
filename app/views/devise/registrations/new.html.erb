@@ -19,5 +19,6 @@
       <%= f.password_field :password_confirmation, class: 'form-control' %>
     </div>
      <%= f.submit 'Sign up', :class => 'button right' %>
+     <%= link_to "Sign in with Google", user_omniauth_authorize_path(:google_oauth2) %>
   <% end %>
 </div>
