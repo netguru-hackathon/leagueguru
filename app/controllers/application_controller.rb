@@ -2,4 +2,12 @@ class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
+
+  def serialize(model, serializer)
+    serializer.new(model).to_json
+  end
+
+  def serialize_all(collection, serializer)
+    ActiveModel::Serializer::ArraySerializer.new(collection, each_serializer: serializer).to_json
+  end
 end
