@@ -5,7 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-user = CreateAdminService.new.call
-puts 'CREATED ADMIN USER: ' << user.email
 # Environment variables (ENV['...']) can be set in the file config/application.yml.
 # See http://railsapps.github.io/rails-environment-variables.html
+
+(0...10).each do
+  League.new(name: (0...8).map { (65 + rand(26)).chr }.join, open: [true, false].sample).save
+end
