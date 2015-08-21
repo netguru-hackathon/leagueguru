@@ -11,9 +11,9 @@ export default class App extends React.Component {
   }
   showPage() {
     if(this.state.currentPage == 'dashboard'){
-      return <DashboardMain leagues={this.props.leagues} openLeague={this.openLeague.bind(this)}></DashboardMain>;
+      return <DashboardMain leagues={this.props.leagues} openLeague={this.openLeague.bind(this)}/>;
     } else {
-      return <LeagueMain></LeagueMain>;
+      return <LeagueMain users={this.props.users}/>;
     }
   }
   openLeague() {

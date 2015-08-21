@@ -6,7 +6,7 @@ const { Component } = React;
 class NewLeagueForm extends Component {
   constructor(props) {
     super(props);
-    const users = JSON.parse(this.props.users);
+    const users = this.props.users;
     this.state = {
       aTeamSelected: [null, null],
       bTeamSelected: [null, null],
@@ -16,7 +16,7 @@ class NewLeagueForm extends Component {
 
   updateATeam(value) {
     debugger
-    const users = JSON.parse(this.props.users);
+    const users = this.props.users;
     let tempUsers = users.filter( (item) => {
       return (item.value != value[0]) &&
              (item.value != value[1]) &&
@@ -32,7 +32,7 @@ class NewLeagueForm extends Component {
 
   updateBTeam(value) {
     debugger
-    const users = JSON.parse(this.props.users);
+    const users = this.props.users;
     let tempUsers = users.filter( (item) => {
       return (item.value != value[0]) &&
              (item.value != value[1]) &&
