@@ -1,12 +1,7 @@
 import React from 'react';
+import DashboardMain from './dashboard/main.jsx';
+
 window.React = React;
-
-class HelloComponent extends React.Component {
-    render() {
-      return <div>Hello!!!! Guru</div>;
-    }
-}
-
 window.ReactComponents = {
-  hello: HelloComponent
+  'dashboard-main': DashboardMain
 };
